@@ -1,5 +1,35 @@
-const Services = () => {
-  return <div></div>;
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
+
+const Services = ({ services }) => {
+  const data = services;
+  console.log(data);
+  return (
+    <div className="my-8">
+      <h1 className="text-3xl font-bold text-center">Our Service's</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-3/4 mx-auto mt-7">
+        {data.map((service) => (
+          <div key={service.id}>
+            <div className="card bg-base-100 shadow-xl">
+              <figure>
+                <img className="h-80 w-full" src={service.image} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{service.event_name}</h2>
+                <p>{service.description.slice(0, 70)}.....</p>
+                <div className="card-actions justify-end">
+                  <p className="font-bold text-red-600">{service.price}</p>
+                  <button className="py-1 px-2 rounded-md bg-red-500 text-white">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Services;

@@ -19,7 +19,6 @@ const Banner = () => {
               possible. Whether you're looking for inspiration, information, or
               products and services, you're in the right place.
             </p>
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
