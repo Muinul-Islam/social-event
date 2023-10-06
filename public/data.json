@@ -1,0 +1,42 @@
+[
+  {
+    "event name": "Weddings",
+    "price": "$10,000",
+    "description": "A wedding is a celebration or ceremony of marriage. Besides being a formal way to mark the union of two people, weddings can be a lot of fun too. The earliest meaning of wedding was simply 'the state of being married,' but by the early 1400s it meant the ceremony or rite at the very beginning of a marriage.",
+    "Image": "https://i.ibb.co/w0MJ5FR/wedding.jpg"
+  },
+  {
+    "event name": "Birthday Parties",
+    "price": "$800",
+    "description": "We celebrate birthdays to remember, acknowledge, and appreciate the life of a person who has been born. Birthdays are about celebrating the life of someone. They are not about buying gifts or throwing a party for family and friends. Rather, they are about celebrating a person's life.",
+    "Image": "https://i.ibb.co/g9Tvy1q/birthday.jpg"
+  },
+  {
+    "event name": "Anniversaries",
+    "price": "$5,000",
+    "description": "An anniversary is the date on which an event took place or an institution was founded in a previous year, and may also refer to the commemoration or celebration of that event. anniversaries are a special time to celebrate the love and commitment between partners.",
+
+    "Image": "https://i.ibb.co/98kdt5B/anniversary.jpg"
+  },
+  {
+    "event name": "Engagement Parties",
+    "price": "$1,200",
+    "description": "An engagement party, also known as a betrothal party or fort, is a party held to celebrate a couple's recent engagement and to help future wedding guests to get to know one another. Traditionally, the bride's parents host the engagement party, but many modern couples host their own celebration.",
+
+    "Image": "https://i.ibb.co/BVMy5ZC/engagement.jpg"
+  },
+  {
+    "event name": "Retirement Parties",
+    "price": "$7,500",
+    "description": "Whether you’re celebrating a family member, friend, or coworker, hosting a retirement party is a thoughtful way to highlight someone’s professional accomplishments and send the honoree off in style for the next chapter of their life. Retirement parties are usually thrown during the retiree’s last month at work, so once they announce their last day, it’s time to start planning. Read on for our best retirement party ideas and how to get started on organizing a send-off for the ages.",
+
+    "Image": "https://i.ibb.co/30TH83g/retirement.png"
+  },
+  {
+    "event name": "Baby Shower",
+    "price": "$600",
+    "description": "Activities at baby showers include gift-giving and playing themed games. Baby shower games vary, sometimes including standard games such as bingo, and sometimes being pregnancy-themed, such as 'guess the mother's measurements' or 'guess the baby'.",
+
+    "image": "https://i.ibb.co/YLKQrJ5/baby.webp"
+  }
+]
