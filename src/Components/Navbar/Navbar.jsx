@@ -28,6 +28,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/servicePage">Services</NavLink>
       </li>
+      <li>
+        <NavLink to="/register">Register</NavLink>
+      </li>
     </>
   );
 

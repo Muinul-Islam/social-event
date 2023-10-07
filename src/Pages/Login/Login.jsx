@@ -1,13 +1,29 @@
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import swal from "sweetalert";
+import { AiOutlineGoogle } from "react-icons/ai";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../../Firebase/firebase.config";
 
 const Login = () => {
   const { logIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+
+  const handleGoogleSignIn = () => {
+    const provider = new GoogleAuthProvider();
+
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        navigate(location?.state ? location.state : "/");
+        swal("Good job!", "You Logged In Successfully", "success");
+      })
+      .catch((error) => {
+        swal("ERROR!", error.message, "error");
+      });
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -71,6 +87,15 @@ const Login = () => {
                 </Link>
               </p>
             </form>
+            <div className="w-3/4 mx-auto rounded-lg mb-4 bg-red-500 p-2 text-center">
+              <button
+                onClick={handleGoogleSignIn}
+                className="flex justify-between gap-2 text-white  items-center"
+              >
+                {" "}
+                <AiOutlineGoogle></AiOutlineGoogle> Login With Google
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero w-full h-[90vh]"
+        className=" hero h-[90vh]"
         style={{
           backgroundImage: "url('https://wallpapercave.com/wp/wp2349395.jpg')",
         }}

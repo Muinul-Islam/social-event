@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="my-10">
       <h1 className="text-5xl font-bold text-center">Contact Info</h1>
       <div data-aos="flip-up">
-        <div className="w-3/4 mx-auto gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="px-8 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="card card-compact bg-base-100 shadow-xl my-8">
             <div className="text-5xl pt-3 text-red-500">
               <ImLocation2 className="w-full mx-auto"></ImLocation2>
