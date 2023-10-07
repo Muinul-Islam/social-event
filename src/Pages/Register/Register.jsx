@@ -26,6 +26,7 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         swal("Good job!", "You Registered Successfully", "success");
+        e.target.reset();
       })
       .catch((error) => {
         swal("ERROR!", error.message, "error");
