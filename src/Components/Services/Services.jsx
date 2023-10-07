@@ -12,7 +12,7 @@ const Services = ({ services }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-3/4 mx-auto mt-8">
         {data.map((service) => (
           <div key={service.id}>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl" data-aos="flip-right">
               <figure>
                 <img className="h-80 w-full" src={service.image} />
               </figure>
