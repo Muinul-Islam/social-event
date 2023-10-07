@@ -4,9 +4,10 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Service from "../Pages/Service/Service";
-import About from "../Pages/About/About";
+// import About from "../Pages/About/About";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -44,9 +45,10 @@ const router = createBrowserRouter([
         ),
         loader: () => fetch("/data.json"),
       },
+
       {
         path: "/about",
-        element: <About></About>,
+        element: <ErrorPage></ErrorPage>,
       },
     ],
   },

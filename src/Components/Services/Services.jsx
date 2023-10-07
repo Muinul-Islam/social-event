@@ -8,8 +8,10 @@ const Services = ({ services }) => {
 
   return (
     <div className="my-10">
-      <h1 className="text-5xl font-bold text-center">Our Service's</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 w-3/4 mx-auto mt-8">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+        Our Service's
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 w-full max-w-7xl  mx-auto mt-8">
         {data.map((service) => (
           <div key={service.id}>
             <div className="card bg-base-100 shadow-xl" data-aos="flip-right">

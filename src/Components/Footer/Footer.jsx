@@ -14,6 +14,9 @@ const Footer = () => {
           <NavLink to="/about" className="link link-hover">
             About us
           </NavLink>
+          <NavLink to="/register" className="link link-hover">
+            Register
+          </NavLink>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

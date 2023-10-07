@@ -1,17 +1,20 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import swal from "sweetalert";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, setUser, logOut } = useContext(AuthContext);
 
   const handleLogOut = () => {
     logOut()
       .then((result) => {
-        console.log(result.user);
+        setUser(null);
+        swal("Success", "You Logged Out Successfully", "success");
       })
       .catch((error) => {
-        console.log(error.message);
+        swal("ERROR!", error.message, "error");
       });
   };
 
@@ -75,9 +78,12 @@ const Navbar = () => {
 
         <div className="navbar-end">
           {user ? (
-            <button onClick={handleLogOut} className="btn">
-              Log out
-            </button>
+            <>
+              <p className="mr-5 hidden sm:block">{user.email}</p>
+              <button onClick={handleLogOut} className="btn">
+                Log out
+              </button>
+            </>
           ) : (
             <NavLink to="/login" className="btn">
               Login
